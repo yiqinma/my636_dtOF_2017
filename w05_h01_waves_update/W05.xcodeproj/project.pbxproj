@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3A48805C1F93CE01000E364C /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3A4880571F93CE01000E364C /* main.cpp */; };
-		3A48805D1F93CE01000E364C /* ofApp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3A4880581F93CE01000E364C /* ofApp.cpp */; };
-		3A48805E1F93CE01000E364C /* Wave.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3A48805A1F93CE01000E364C /* Wave.cpp */; };
+		3A48805C1F93CE01000E364C /* .. in Sources */ = {isa = PBXBuildFile; fileRef = 3A4880571F93CE01000E364C /* .. */; };
+		3A48805D1F93CE01000E364C /* .. in Sources */ = {isa = PBXBuildFile; fileRef = 3A4880581F93CE01000E364C /* .. */; };
+		3A48805E1F93CE01000E364C /* .. in Sources */ = {isa = PBXBuildFile; fileRef = 3A48805A1F93CE01000E364C /* .. */; };
 		E4328149138ABC9F0047C5CB /* openFrameworksDebug.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E4328148138ABC890047C5CB /* openFrameworksDebug.a */; };
 /* End PBXBuildFile section */
 
@@ -43,11 +43,11 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		3A4880571F93CE01000E364C /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = main.cpp; path = "../../../../../../Library/Containers/com.tencent.xinWeChat/Data/Library/Application Support/com.tencent.xinWeChat/2.0b4.0.9/bb79fd9f3492628b31442606f88ccc41/Message/MessageTemp/9e20f478899dc29eb19741386f9343c8/File/code/main.cpp"; sourceTree = "<group>"; };
-		3A4880581F93CE01000E364C /* ofApp.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ofApp.cpp; path = "../../../../../../Library/Containers/com.tencent.xinWeChat/Data/Library/Application Support/com.tencent.xinWeChat/2.0b4.0.9/bb79fd9f3492628b31442606f88ccc41/Message/MessageTemp/9e20f478899dc29eb19741386f9343c8/File/code/ofApp.cpp"; sourceTree = "<group>"; };
-		3A4880591F93CE01000E364C /* ofApp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ofApp.h; path = "../../../../../../Library/Containers/com.tencent.xinWeChat/Data/Library/Application Support/com.tencent.xinWeChat/2.0b4.0.9/bb79fd9f3492628b31442606f88ccc41/Message/MessageTemp/9e20f478899dc29eb19741386f9343c8/File/code/ofApp.h"; sourceTree = "<group>"; };
-		3A48805A1F93CE01000E364C /* Wave.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Wave.cpp; path = "../../../../../../Library/Containers/com.tencent.xinWeChat/Data/Library/Application Support/com.tencent.xinWeChat/2.0b4.0.9/bb79fd9f3492628b31442606f88ccc41/Message/MessageTemp/9e20f478899dc29eb19741386f9343c8/File/code/Wave.cpp"; sourceTree = "<group>"; };
-		3A48805B1F93CE01000E364C /* Wave.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Wave.h; path = "../../../../../../Library/Containers/com.tencent.xinWeChat/Data/Library/Application Support/com.tencent.xinWeChat/2.0b4.0.9/bb79fd9f3492628b31442606f88ccc41/Message/MessageTemp/9e20f478899dc29eb19741386f9343c8/File/code/Wave.h"; sourceTree = "<group>"; };
+		3A4880571F93CE01000E364C /* .. */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = folder; name = ..; path = ../..; sourceTree = "<group>"; };
+		3A4880581F93CE01000E364C /* .. */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = folder; name = ..; path = ../..; sourceTree = "<group>"; };
+		3A4880591F93CE01000E364C /* .. */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = folder; name = ..; path = ../..; sourceTree = "<group>"; };
+		3A48805A1F93CE01000E364C /* .. */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = folder; name = ..; path = ../..; sourceTree = "<group>"; };
+		3A48805B1F93CE01000E364C /* .. */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = folder; name = ..; path = ../..; sourceTree = "<group>"; };
 		E4328143138ABC890047C5CB /* openFrameworksLib.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = openFrameworksLib.xcodeproj; path = ../../../libs/openFrameworksCompiled/project/osx/openFrameworksLib.xcodeproj; sourceTree = SOURCE_ROOT; };
 		E4B69B5B0A3A1756003C02F2 /* W05Debug.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = W05Debug.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4B6FCAD0C3E899E008CF71C /* openFrameworks-Info.plist */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.plist.xml; path = "openFrameworks-Info.plist"; sourceTree = "<group>"; };
@@ -105,11 +105,11 @@
 		E4B69E1C0A3A1BDC003C02F2 /* src */ = {
 			isa = PBXGroup;
 			children = (
-				3A4880571F93CE01000E364C /* main.cpp */,
-				3A4880581F93CE01000E364C /* ofApp.cpp */,
-				3A4880591F93CE01000E364C /* ofApp.h */,
-				3A48805A1F93CE01000E364C /* Wave.cpp */,
-				3A48805B1F93CE01000E364C /* Wave.h */,
+				3A4880571F93CE01000E364C /* .. */,
+				3A4880581F93CE01000E364C /* .. */,
+				3A4880591F93CE01000E364C /* .. */,
+				3A48805A1F93CE01000E364C /* .. */,
+				3A48805B1F93CE01000E364C /* .. */,
 			);
 			path = src;
 			sourceTree = SOURCE_ROOT;
@@ -210,9 +210,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3A48805E1F93CE01000E364C /* Wave.cpp in Sources */,
-				3A48805D1F93CE01000E364C /* ofApp.cpp in Sources */,
-				3A48805C1F93CE01000E364C /* main.cpp in Sources */,
+				3A48805E1F93CE01000E364C /* .. in Sources */,
+				3A48805D1F93CE01000E364C /* .. in Sources */,
+				3A48805C1F93CE01000E364C /* .. in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

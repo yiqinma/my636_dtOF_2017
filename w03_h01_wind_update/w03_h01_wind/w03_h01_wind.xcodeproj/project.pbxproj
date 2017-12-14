@@ -10,6 +10,7 @@
 		3A4880661F93CEB1000E364C /* Hexagon.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3A4880611F93CEB1000E364C /* Hexagon.cpp */; };
 		3A4880671F93CEB1000E364C /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3A4880631F93CEB1000E364C /* main.cpp */; };
 		3A4880681F93CEB1000E364C /* ofApp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3A4880641F93CEB1000E364C /* ofApp.cpp */; };
+		3AC9252D1FBBC2C500B3DE1F /* Hexagon.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3AC9252B1FBBC2C500B3DE1F /* Hexagon.cpp */; };
 		E4328149138ABC9F0047C5CB /* openFrameworksDebug.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E4328148138ABC890047C5CB /* openFrameworksDebug.a */; };
 /* End PBXBuildFile section */
 
@@ -48,6 +49,8 @@
 		3A4880631F93CEB1000E364C /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = main.cpp; path = "../../../../../../../Library/Containers/com.tencent.xinWeChat/Data/Library/Application Support/com.tencent.xinWeChat/2.0b4.0.9/bb79fd9f3492628b31442606f88ccc41/Message/MessageTemp/9e20f478899dc29eb19741386f9343c8/File/wind/main.cpp"; sourceTree = "<group>"; };
 		3A4880641F93CEB1000E364C /* ofApp.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ofApp.cpp; path = "../../../../../../../Library/Containers/com.tencent.xinWeChat/Data/Library/Application Support/com.tencent.xinWeChat/2.0b4.0.9/bb79fd9f3492628b31442606f88ccc41/Message/MessageTemp/9e20f478899dc29eb19741386f9343c8/File/wind/ofApp.cpp"; sourceTree = "<group>"; };
 		3A4880651F93CEB1000E364C /* ofApp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ofApp.h; path = "../../../../../../../Library/Containers/com.tencent.xinWeChat/Data/Library/Application Support/com.tencent.xinWeChat/2.0b4.0.9/bb79fd9f3492628b31442606f88ccc41/Message/MessageTemp/9e20f478899dc29eb19741386f9343c8/File/wind/ofApp.h"; sourceTree = "<group>"; };
+		3AC9252B1FBBC2C500B3DE1F /* Hexagon.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Hexagon.cpp; sourceTree = "<group>"; };
+		3AC9252C1FBBC2C500B3DE1F /* Hexagon.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Hexagon.hpp; sourceTree = "<group>"; };
 		E4328143138ABC890047C5CB /* openFrameworksLib.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = openFrameworksLib.xcodeproj; path = ../../../../libs/openFrameworksCompiled/project/osx/openFrameworksLib.xcodeproj; sourceTree = SOURCE_ROOT; };
 		E4B69B5B0A3A1756003C02F2 /* w03_h01_windDebug.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = w03_h01_windDebug.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4B6FCAD0C3E899E008CF71C /* openFrameworks-Info.plist */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.plist.xml; path = "openFrameworks-Info.plist"; sourceTree = "<group>"; };
@@ -110,6 +113,8 @@
 				3A4880631F93CEB1000E364C /* main.cpp */,
 				3A4880641F93CEB1000E364C /* ofApp.cpp */,
 				3A4880651F93CEB1000E364C /* ofApp.h */,
+				3AC9252B1FBBC2C500B3DE1F /* Hexagon.cpp */,
+				3AC9252C1FBBC2C500B3DE1F /* Hexagon.hpp */,
 			);
 			path = src;
 			sourceTree = SOURCE_ROOT;
@@ -212,6 +217,7 @@
 			files = (
 				3A4880671F93CEB1000E364C /* main.cpp in Sources */,
 				3A4880681F93CEB1000E364C /* ofApp.cpp in Sources */,
+				3AC9252D1FBBC2C500B3DE1F /* Hexagon.cpp in Sources */,
 				3A4880661F93CEB1000E364C /* Hexagon.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
