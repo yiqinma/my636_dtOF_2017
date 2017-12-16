@@ -1,4 +1,5 @@
 ofxCv
+ofxFaceTracker
 ofxIpVideoGrabber
 ofxOpenCv
 ofxXmlSettings

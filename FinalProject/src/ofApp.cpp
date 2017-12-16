@@ -1,28 +1,5 @@
-// =============================================================================
-//
-// Copyright (c) 2009-2016 Christopher Baker <http://christopherbaker.net>
-//
-// Permission is hereby granted, free of charge, to any person obtaining a copy
-// of this software and associated documentation files (the "Software"), to deal
-// in the Software without restriction, including without limitation the rights
-// to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-// copies of the Software, and to permit persons to whom the Software is
-// furnished to do so, subject to the following conditions:
-//
-// The above copyright notice and this permission notice shall be included in
-// all copies or substantial portions of the Software.
-//
-// THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-// IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-// FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-// AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-// LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-// OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
-// THE SOFTWARE.
-//
-// =============================================================================
 
-
+//updated
 #include "ofApp.h"
 
 using namespace ofxCv;
@@ -102,8 +79,8 @@ void ofApp::loadCameras()
         
         for (std::size_t n = 0; n < nCams; ++n)
         {
-            std::string username = XML.getAttribute(tag, "username", "", n);
-            std::string password = XML.getAttribute(tag, "password", "", n);
+            std::string username = XML.getAttribute(tag, "", "", n);
+            std::string password = XML.getAttribute(tag, "", "", n);
             
             std::string auth = XML.getAttribute(tag, "auth-type", "NONE", n);
             
@@ -129,10 +106,10 @@ void ofApp::loadCameras()
                             authType);
             
             
-            std::string logMessage = "STREAM LOADED: " + def.getName() +
-            " url: " +  def.getURL() +
-            " username: " + def.getUsername() +
-            " password: " + def.getPassword() +
+            std::string logMessage = "" + def.getName() +
+            " " +  def.getURL() +
+            " " + def.getUsername() +
+            " " + def.getPassword() +
             " auth: " + std::to_string(static_cast<int>((def.getAuthType())));
             
             ofLogNotice() << logMessage;
@@ -181,13 +158,13 @@ void ofApp::update()
             grabbers[i]->update();
             if (grabbers[i]->isFrameNew())
                 finder.update(grabbers[i]->getPixels());
-            //        if (grabbers[i]->isFrameNew()){
-            //        contourFinder.setMinAreaRadius(minArea);
-            //        contourFinder.setMaxAreaRadius(maxArea);
-            //        contourFinder.setThreshold(threshold);
-            //            contourFinder.findContours(grabbers[i]->getPixels());
-            //        contourFinder.setFindHoles(holes);
-            //        }
+//                    if (grabbers[i]->isFrameNew()){
+//                    contourFinder.setMinAreaRadius(minArea);
+//                    contourFinder.setMaxAreaRadius(maxArea);
+//                    contourFinder.setThreshold(threshold);
+//                        contourFinder.findContours(grabbers[i]->getPixels());
+//                    contourFinder.setFindHoles(holes);
+//                    }
         }
     }else{
         cam.update();
@@ -257,10 +234,10 @@ void ofApp::draw()
                 // ofToString formatting available in 0072+
                 
                 
-                ss << "NAME: " << grabbers[i]->getCameraName() << std::endl;
-                ss << "HOST: " << grabbers[i]->getHost() << std::endl;
-                ss << "USERNAME: " << grabbers[i]->getUsername() << std::endl;
-                ss << "PASSWORD: " << grabbers[i]->getPassword() << std::endl;
+//                ss << "NAME: " << grabbers[i]->getCameraName() << std::endl;
+//                ss << "HOST: " << grabbers[i]->getHost() << std::endl;
+//                ss << "" << grabbers[i]->getUsername() << std::endl;
+//                ss << " " << grabbers[i]->getPassword() << std::endl;
                 
                 ofSetColor(255);
                 ofDrawBitmapString(ss.str(), 10, 12);
@@ -276,9 +253,9 @@ void ofApp::draw()
             
             ofSetColor(255);
             // ofToString formatting available in 0072+
-            ofDrawBitmapString("AVG FPS: " + ofToString(avgFPS,2/*,7,' '*/), 10, 77);
-            ofDrawBitmapString("AVG Kb/S: " + ofToString(avgKbps,2/*,7,' '*/), 10, 89);
-            ofDrawBitmapString("TOT Kb/S: " + ofToString(totalKbps,2/*,7,' '*/), 10, 101);
+            ofDrawBitmapString("AVG FPS: " + ofToString(avgFPS,2/*,7,' '*/), 10, 30);
+            ofDrawBitmapString("AVG Kb/S: " + ofToString(avgKbps,2/*,7,' '*/), 10, 41);
+            ofDrawBitmapString("TOT Kb/S: " + ofToString(totalKbps,2/*,7,' '*/), 10, 52);
             ofDisableAlphaBlending();
             
             ofDrawBitmapString("Press Spacebar for next Video", 10, ofGetHeight() - 14);

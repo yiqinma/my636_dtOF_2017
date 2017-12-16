@@ -4,7 +4,7 @@
 Shape::Shape(){
     loc = ofVec2f(ofRandomWidth(),ofRandom(-150,50));
     dir = ofVec2f(0, 0);
-    color = ofColor(ofRandom(255),ofRandom(255),ofRandom(255),ofRandom(150,255));
+    color = ofColor(227,255,ofRandom(255),ofRandom(150,255));
     diameter = ofRandom(20,30);
     speed = ofRandom(4,7);
     SPEED = speed;
