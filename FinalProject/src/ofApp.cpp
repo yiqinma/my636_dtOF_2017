@@ -45,7 +45,7 @@ void ofApp::setup()
     //
     //    finder.setPreset(ObjectFinder::Preset::Fast);
     count = 1;
-    cam.setup(640, 480);
+     cam.setup(640, 480);
 }
 
 
