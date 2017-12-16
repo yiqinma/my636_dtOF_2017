@@ -1,9 +1,7 @@
 #pragma once
 
 #include "ofMain.h"
-#include "Firework.hpp"
-#include "Particle.hpp"
-#include "ParticleSystem.hpp"
+#include "Jellyfish.hpp"
 
 class ofApp : public ofBaseApp{
     
@@ -24,9 +22,6 @@ public:
     void dragEvent(ofDragInfo dragInfo);
     void gotMessage(ofMessage msg);
     
-    vector<Firework> fireworks;
-    int strength;
-    bool gather;
-    ofImage image;
+    vector<Jellyfish> jellyfishs;
     
 };

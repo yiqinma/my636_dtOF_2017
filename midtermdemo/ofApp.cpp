@@ -2,39 +2,33 @@
 
 //--------------------------------------------------------------
 void ofApp::setup(){
-    image.loadImage("skyline.png");
-    strength = 0;
-    gather = false;
+    f = 0;
+    ofSetRectMode(OF_RECTMODE_CENTER);
 }
 
 //--------------------------------------------------------------
 void ofApp::update(){
-    for(int i = fireworks.size()-1;i>=0;i--)
-    {
-        if(fireworks[i].isFinished())
-            fireworks.erase(fireworks.begin()+i);
-        else
-            fireworks[i].update();
+    for(int i = balls.size() - 1;i >= 0;i--){
+        balls[i].update(f);
+        if(balls[i].isDone()){
+            balls.erase(balls.begin() + i);
+        }
     }
 }
 
 //--------------------------------------------------------------
 void ofApp::draw(){
-    image.draw(0,0,ofGetWidth(),ofGetHeight());
-   
-    for(int i = fireworks.size()-1;i>=0;i--)
-    {
-        fireworks[i].draw();
+    ofSetBackgroundColor(0);
+    float cenX = ofGetWidth()/2;
+    float cenY = ofGetHeight()/2;
+    for (int i= 0; i<700; i++) {
+        ofSetColor(i/2,i/2,i/2);
+        ofDrawRectangle(cenX + i*cos(PI*(i*8+f)/180),cenY + i*sin(PI*(i*8+f)/180),1+i*0.06,1+i*0.06);
     }
-    
-    ofDrawRectangle(0, ofGetHeight(), 15, -(strength/1000.0)*ofGetHeight());
-    if(gather)
-    {
-        strength += 15;
-        printf("%d",strength);
+    f -= 0.5;
+    for(int i = balls.size() - 1;i >= 0;i--){
+        balls[i].display();
     }
-    if(strength >= 1000)
-        strength = 0;
 }
 
 //--------------------------------------------------------------
@@ -49,48 +43,45 @@ void ofApp::keyReleased(int key){
 
 //--------------------------------------------------------------
 void ofApp::mouseMoved(int x, int y ){
-    
+
 }
 
 //--------------------------------------------------------------
 void ofApp::mouseDragged(int x, int y, int button){
-    
+
 }
 
 //--------------------------------------------------------------
 void ofApp::mousePressed(int x, int y, int button){
-    gather = true;
+
 }
 
 //--------------------------------------------------------------
 void ofApp::mouseReleased(int x, int y, int button){
-    
-    fireworks.push_back(Firework(mouseX,mouseY,strength));
-    strength = 0;
-    gather = false;
+    balls.push_back(Ball());
 }
 
 //--------------------------------------------------------------
 void ofApp::mouseEntered(int x, int y){
-    
+
 }
 
 //--------------------------------------------------------------
 void ofApp::mouseExited(int x, int y){
-    
+
 }
 
 //--------------------------------------------------------------
 void ofApp::windowResized(int w, int h){
-    
+
 }
 
 //--------------------------------------------------------------
 void ofApp::gotMessage(ofMessage msg){
-    
+
 }
 
 //--------------------------------------------------------------
-void ofApp::dragEvent(ofDragInfo dragInfo){
-    
+void ofApp::dragEvent(ofDragInfo dragInfo){ 
+
 }

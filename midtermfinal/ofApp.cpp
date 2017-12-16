@@ -2,44 +2,34 @@
 
 //--------------------------------------------------------------
 void ofApp::setup(){
-    image.loadImage("skyline.png");
-    strength = 0;
-    gather = false;
 }
 
 //--------------------------------------------------------------
 void ofApp::update(){
-    for(int i = fireworks.size()-1;i>=0;i--)
+    for(int i = jellyfishs.size()-1;i>=0;i--)
     {
-        if(fireworks[i].isFinished())
-            fireworks.erase(fireworks.begin()+i);
-        else
-            fireworks[i].update();
+        jellyfishs[i].update();
     }
 }
 
 //--------------------------------------------------------------
 void ofApp::draw(){
-    image.draw(0,0,ofGetWidth(),ofGetHeight());
-   
-    for(int i = fireworks.size()-1;i>=0;i--)
+    ofBackground(255);
+    for(int i = jellyfishs.size()-1;i>=0;i--)
     {
-        fireworks[i].draw();
+        jellyfishs[i].display();
     }
-    
-    ofDrawRectangle(0, ofGetHeight(), 15, -(strength/1000.0)*ofGetHeight());
-    if(gather)
-    {
-        strength += 15;
-        printf("%d",strength);
-    }
-    if(strength >= 1000)
-        strength = 0;
 }
 
 //--------------------------------------------------------------
 void ofApp::keyPressed(int key){
-    
+    if(key == ' '){
+        jellyfishs.push_back(Jellyfish(ofGetWidth()/2,ofGetHeight()/2));
+    }else if(key == 'm'){
+        jellyfishs.push_back(Jellyfish(ofGetMouseX(),ofGetMouseY()));
+    }else if(key == 'r'){
+        jellyfishs.push_back(Jellyfish());
+    }
 }
 
 //--------------------------------------------------------------
@@ -59,15 +49,17 @@ void ofApp::mouseDragged(int x, int y, int button){
 
 //--------------------------------------------------------------
 void ofApp::mousePressed(int x, int y, int button){
-    gather = true;
+    for(int i = jellyfishs.size()-1;i>=0;i--)
+    {
+        ofVec2f temp = ofVec2f(ofGetMouseX(),ofGetMouseY());
+        jellyfishs[i].dir = temp - jellyfishs[i].loc;
+        jellyfishs[i].dir.normalize();
+    }
 }
 
 //--------------------------------------------------------------
 void ofApp::mouseReleased(int x, int y, int button){
     
-    fireworks.push_back(Firework(mouseX,mouseY,strength));
-    strength = 0;
-    gather = false;
 }
 
 //--------------------------------------------------------------
